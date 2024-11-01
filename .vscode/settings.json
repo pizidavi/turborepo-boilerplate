@@ -1,0 +1,18 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.biome": "explicit",
+    "source.fixAll.biome": "explicit"
+  },
+  "biome.enabled": true,
+  "biome.lspBin": "node_modules/.bin/biome",
+  "turbo.path": "node_modules/.bin/turbo",
+  "evenBetterToml.schema.associations": {
+    "mise.toml": "https://mise.jdx.dev/schema/mise.json",
+    "wrangler.toml": "https://www.unpkg.com/wrangler@3.101.0/config-schema.json"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  }
+}
