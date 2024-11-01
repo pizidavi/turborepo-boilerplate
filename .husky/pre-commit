@@ -1,0 +1,2 @@
+bunx turbo check
+git update-index --again

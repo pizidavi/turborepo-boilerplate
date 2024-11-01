@@ -1,0 +1,21 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "wrangler dev -e development",
+    "deploy": "wrangler deploy --minify -e preview",
+    "clean": "rm -r public"
+  },
+  "dependencies": {
+    "@hono/zod-openapi": "^0.18.3",
+    "@repo/types": "workspace:*",
+    "@repo/logger": "workspace:*",
+    "@scalar/hono-api-reference": "^0.5.170",
+    "hono": "^4.6.20",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250129.0",
+    "wrangler": "^3.107.2"
+  }
+}

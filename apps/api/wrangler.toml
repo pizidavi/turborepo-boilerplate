@@ -1,0 +1,38 @@
+name = "api"
+main = "src/index.ts"
+compatibility_date = "2024-11-11"
+compatibility_flags = ["nodejs_compat"]
+
+[env.development]
+vars = { ENV = "development" }
+
+[env.preview]
+vars = { ENV = "preview" }
+
+[env.production]
+vars = { ENV = "production" }
+
+[assets]
+directory = "public"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+
+[observability]
+enabled = true
+logs = { enabled = true }
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
+# database_id = ""
+
+# [ai]
+# binding = "AI"

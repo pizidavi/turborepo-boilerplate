@@ -1,0 +1,11 @@
+{
+  "name": "@repo/types",
+  "version": "0.0.0",
+  "scripts": {},
+  "dependencies": {
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*"
+  }
+}
