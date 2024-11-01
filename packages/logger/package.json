@@ -1,0 +1,8 @@
+{
+  "name": "@repo/logger",
+  "version": "0.0.0",
+  "scripts": {},
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*"
+  }
+}
