@@ -1,0 +1,10 @@
+{
+  "name": "@repo/logger",
+  "version": "0.0.0",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "turborepo",
+  "private": true,
+  "scripts": {
+    "prepare": "husky",
+    "dev": "turbo dev",
+    "check": "biome check . --write --no-errors-on-unmatched",
+    "api": "bun --filter=api run",
+    "web": "bun --filter=web run",
+    "database": "bun --filter=@repo/database run"
+  },
+  "workspaces": ["apps/*", "packages/*"],
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
+    "turbo": "^2.5.0",
+    "typescript": "~5.8.3"
+  },
+  "packageManager": "bun@1.0.0"
+}

@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "biomejs.biome",
+    "vercel.turbo-vsc",
+    "tamasfe.even-better-toml",
+    "hverlin.mise-vscode"
+  ]
+}
