@@ -1,0 +1,35 @@
+{
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "biome.enabled": true,
+  "biome.lspBin": "node_modules/.bin/biome",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "evenBetterToml.schema.associations": {
+    "mise.toml": "https://mise.jdx.dev/schema/mise.json",
+    "wrangler.toml": "https://www.unpkg.com/wrangler@3.101.0/config-schema.json"
+  },
+  "files.readonlyInclude": {
+    "**/routeTree.gen.ts": true,
+    "bun.lock": true
+  },
+  "files.watcherExclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "prettier.enable": false,
+  "search.exclude": {
+    "**/routeTree.gen.ts": true,
+    "bun.lock": true
+  },
+  "turbo.path": "node_modules/.bin/turbo",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

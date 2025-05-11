@@ -1,0 +1,1 @@
+bunx lint-staged || { [ $? -eq 127 ] && npx lint-staged; }
