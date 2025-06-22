@@ -1,0 +1,13 @@
+{
+  "name": "@repo/types",
+  "version": "0.0.0",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "peerDependencies": {
+    "zod": "*"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*"
+  }
+}

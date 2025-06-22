@@ -1,0 +1,57 @@
+.cache/
+.expo/
+.turbo/
+.wrangler/
+dist/
+dist-ssr/
+node_modules/
+web-build/
+
+# misc
+.DS_Store
+.metro-health-check*
+*.tsbuildinfo
+*.pem
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Native
+android/
+ios/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.keystore
+!debug.keystore
+*.apk
+*.aab
+*.ipa
+
+# logs
+logs/
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+pnpm-debug.*
+lerna-debug.*
+
+# editor
+.idea
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+
+# env
+.env*
+!.env.sample
+.dev.vars
+*.local

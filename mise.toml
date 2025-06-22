@@ -1,0 +1,18 @@
+[tools]
+bun = "1"
+
+[env]
+_.file = { path = ".env", redact = true }
+
+[tasks.deploy]
+description = "Deploy on Cloudflare Workers"
+depends = ["clean"]
+run = [
+  "bun turbo run build --filter=api --filter=web",
+  "mv apps/web/dist apps/api/public",
+  "bun run --filter=api deploy",
+]
+
+[tasks.clean]
+description = "Clean up"
+run = "bun run --filter=* clean || true"

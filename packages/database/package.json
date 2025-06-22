@@ -1,0 +1,19 @@
+{
+  "name": "@repo/database",
+  "version": "0.0.0",
+  "scripts": {
+    "generate": "drizzle-kit generate",
+    "migrate": "wrangler d1 migrations apply --cwd ../../apps/api"
+  },
+  "exports": {
+    ".": "./index.ts"
+  },
+  "peerDependencies": {
+    "@repo/types": "workspace:*",
+    "drizzle-orm": "*"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "drizzle-kit": "^0.31.1"
+  }
+}

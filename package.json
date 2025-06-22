@@ -1,0 +1,28 @@
+{
+  "name": "turborepo-boilerplate",
+  "private": true,
+  "scripts": {
+    "prepare": "husky",
+    "dev": "turbo dev",
+    "check": "biome check . --write --no-errors-on-unmatched",
+    "api": "bun --filter=api run",
+    "web": "bun --filter=web run",
+    "database": "bun --filter=@repo/database run",
+    "web-ui": "bun --filter=@repo/web-ui run"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "^2.0.4",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@types/bun": "^1.2.17",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "turbo": "^2.5.4",
+    "typescript": "~5.8.3"
+  },
+  "packageManager": "bun@1.2.0"
+}

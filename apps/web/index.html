@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web, a sample application created with TanStack" />
+    <meta name="keywords" content="TanStack, React, React Query, React Router, Web Vite, Webpack, Tailwind CSS" />
+    <meta property="og:title" content="Web" />
+    <meta property="og:description" content="A sample application created with TanStack" />
+    <meta property="og:image" content="/logo512.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Web" />
+    <meta name="twitter:description" content="A sample application created with TanStack" />
+    <meta name="twitter:image" content="/logo512.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Web</title>
+    <script type="application/javascript">
+      try {
+        if (
+          localStorage.theme === 'dark' ||
+          ((!('theme' in localStorage) || localStorage.theme === 'system') &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches)
+        )
+          document.documentElement.classList.add('dark');
+      } catch (_) {}
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <style>
+        body {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          height: 100svh;
+          padding: 0;
+          margin: 0;
+        }
+        h1 {
+          font-family: 'Courier New', Courier, monospace;
+        }
+      </style>
+      <h1>Please enable JavaScript to run this app</h1>
+    </noscript>
+    <div id="app"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
+
